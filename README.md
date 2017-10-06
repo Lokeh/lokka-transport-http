@@ -44,6 +44,22 @@ const headers = {
 const transport = new HttpTransport('/graphql', {headers});
 ```
 
+## Use Custom Agent (Node.js ONLY)
+
+```js
+const options = {
+  // Necessary only if using the client certificate authentication
+  key: fs.readFileSync('client-key.pem'),
+  cert: fs.readFileSync('client-cert.pem'),
+
+  // Necessary only if the server uses the self-signed certificate
+  ca: [ fs.readFileSync('server-cert.pem') ]
+};
+const agent = new https.Agent(options);
+
+const transport = new HttpTransport('/graphql', { agent });
+```
+
 ## Authentication
 
 This package does not handle authentication information for you. But it'll let you interact with your app's existing authentication mechanism.
