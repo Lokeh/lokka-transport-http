@@ -1,6 +1,6 @@
 {
   "name": "@lilactown/lokka-transport-http",
-  "version": "1.7.1",
+  "version": "1.7.2",
   "description": "Isomorphic HTTP Transport for Lokka",
   "repository": {
     "type": "git",
