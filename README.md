@@ -11,7 +11,7 @@ This is a [graphql-express](https://github.com/graphql/express-graphql) compatib
 Install the package:
 
 ```
-npm i --save lokka-transport-http
+npm i --save @lilactown/lokka-transport-http
 npm i --save lokka
 ```
 
