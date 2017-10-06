@@ -17,6 +17,7 @@
   ],
   "scripts": {
     "prepublish": ". ./scripts/prepublish.sh",
+    "build": ". ./scripts/prepublish.sh",
     "lint": "eslint ./lib",
     "lintfix": "eslint ./lib --fix",
     "testonly": "mocha $npm_package_options_mocha",
